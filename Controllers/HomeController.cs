@@ -22,7 +22,7 @@ namespace Hankins_MIS4200.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Alex's Contact Details";
 
             return View();
         }
