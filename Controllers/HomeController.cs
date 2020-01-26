@@ -15,7 +15,7 @@ namespace Hankins_MIS4200.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Bio";
 
             return View();
         }
