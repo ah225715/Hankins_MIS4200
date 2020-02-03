@@ -19,10 +19,14 @@ namespace Hankins_MIS4200
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
-            routes.MapRoute(
-                name: "Hello",
+
+
+
+
+             routes.MapRoute(
+            name: "Hello",
                 url: "{controller}/{action}/{name}/{id}"
-                );
+                ); 
 
 
         }
