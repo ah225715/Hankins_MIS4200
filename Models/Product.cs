@@ -10,6 +10,7 @@ namespace Hankins_MIS4200.Models
         public int productId { get; set; }
         public string description { get; set; }
         public decimal unitCost { get; set; }
+        public int supplierId { get; set; }
 
         // ad any other fields as appropriate
 
