@@ -1,0 +1,42 @@
+﻿@model Hankins_MIS4200.Models.Plane
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Plane</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.planeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.planeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.airline)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.airline)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateManufactured)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateManufactured)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.planeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

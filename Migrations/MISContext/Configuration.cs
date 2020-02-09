@@ -10,7 +10,8 @@ namespace Hankins_MIS4200.Migrations.MISContext
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            MigrationsDirectory = @"Migrations/MISContext";
+            MigrationsDirectory = @"Migrations\MISContext";
+            ContextKey = "Hankins_MIS4200.DAL.MIS4200Context";
         }
 
         protected override void Seed(Hankins_MIS4200.DAL.MIS4200Context context)
