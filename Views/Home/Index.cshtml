@@ -2,11 +2,16 @@
     ViewBag.Title = "Home Page";
 }
 
- @*@<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>*@
+@*@<div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>*@
+
+<div class="alert alert-info alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Welcome!</strong> This is my finished SD3 application for your grading. I hope you are having a nice day!
+</div>
 
 <div class="row">
     <div class="col-md-4">
@@ -32,14 +37,35 @@
         </div>
     </div>
 
-        <div class="col-md-4">
-            <h2><b>MIS 4200</b></h2>
-            <p>MIS 4200 is desgined to provide a refresher to students on system devleopment techniques before providing students with experience working on an information system consulting/development project using live clients.<span class="glyphicon glyphicon-plane"></span></p>
-            <p><a class="btn btn-default" href="https://catalogs.ohio.edu/preview_program.php?catoid=53&poid=14438">Learn more &raquo;</a></p>
+    <div class="col-md-4">
+        <h2><b>MIS 4200</b></h2>
+        <p>MIS 4200 is desgined to provide a refresher to students on system devleopment techniques before providing students with experience working on an information system consulting/development project using live clients.<span class="glyphicon glyphicon-plane"></span></p>
+        <p><a class="btn btn-primary btn-lg" href="https://catalogs.ohio.edu/preview_program.php?catoid=53&poid=14438">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2><b>Consulting</b></h2>
+        <p>Consulting is the business of providing expert advice to a specific group of people.<span class="glyphicon glyphicon-piggy-bank"></span></p>
+        <p><a class="btn btn-primary btn-xs" href="https://www.consulting.com/what-is-consulting-definition">Learn more &raquo;</a></p>
+    </div>
+
+
+    <div class="col-md-4">
+        <div class="container">
+
+        <h2><b>Little Fun Tooltip</b></h2>
+
+        <a href="https://business.ohio.edu/about/faculty-staff/luce-thom/" data-toggle="tooltip" title="Hooray!">Hover over me...Then wait a second...Then click on me!</a>
+
         </div>
-        <div class="col-md-4">
-            <h2><b>Consulting</b></h2>
-            <p>Consulting is the business of providing expert advice to a specific group of people.<span class="glyphicon glyphicon-piggy-bank"></span></p>
-            <p><a class="btn btn-default" href="https://www.consulting.com/what-is-consulting-definition">Learn more &raquo;</a></p>
-        </div>
+    </div>
 </div>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('[data-toggle="tooltip"]').tooltip();
+
+        });
+
+    </script>
