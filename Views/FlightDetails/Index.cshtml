@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table table-hover">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Passenger.passengerName)
@@ -33,7 +33,7 @@
     </tr>
 
 @foreach (var item in Model) {
-    <tr>
+    <tr class="danger">
         <td>
             @Html.DisplayFor(modelItem => item.Passenger.passengerName)
         </td>

@@ -10,26 +10,36 @@
 
 <div class="row">
     <div class="col-md-4">
-        <h2><b>SD2</b></h2>
-        <p>
-            This application is for the Software Development #2 homework assignment in MIS 4200.
-        </p>
+        <h2><b>SD3</b></h2>
+        <p>This application is for the Software Development #3 homework assignment in MIS 4200.<span class="glyphicon glyphicon-fire"></span></p>
         <p>@Html.ActionLink("Planes", "Index", "Planes") </p>
         <p>@Html.ActionLink("Flight Details", "Index", "FlightDetails") </p>
         <p>@Html.ActionLink("Passengers", "Index", "Passengers")</p>
-                 
-       
-        
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                View Selector
 
+                <span class="caret"></span>
+            </button>
+
+            <ul class="dropdown-menu dropdown-menu-left">
+
+                <li>@Html.ActionLink("Planes", "Index", "Planes")</li>
+                <li>@Html.ActionLink("Flight Details", "Index", "FlightDetails")</li>
+                <li>@Html.ActionLink("Passengers", "Index", "Passengers")</li>
+
+            </ul>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2><b>MIS 4200</b></h2>
-        <p>MIS 4200 is desgined to provide a refresher to students on system devleopment techniques before providing students with experience working on an information system consulting/development project using live clients.</p>
-        <p><a class="btn btn-default" href="https://catalogs.ohio.edu/preview_program.php?catoid=53&poid=14438">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2><b>Consulting</b></h2>
-        <p>Consulting is the business of providing expert advice to a specific group of people.</p>
-        <p><a class="btn btn-default" href="https://www.consulting.com/what-is-consulting-definition">Learn more &raquo;</a></p>
-    </div>
+
+        <div class="col-md-4">
+            <h2><b>MIS 4200</b></h2>
+            <p>MIS 4200 is desgined to provide a refresher to students on system devleopment techniques before providing students with experience working on an information system consulting/development project using live clients.<span class="glyphicon glyphicon-plane"></span></p>
+            <p><a class="btn btn-default" href="https://catalogs.ohio.edu/preview_program.php?catoid=53&poid=14438">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2><b>Consulting</b></h2>
+            <p>Consulting is the business of providing expert advice to a specific group of people.<span class="glyphicon glyphicon-piggy-bank"></span></p>
+            <p><a class="btn btn-default" href="https://www.consulting.com/what-is-consulting-definition">Learn more &raquo;</a></p>
+        </div>
 </div>
